@@ -1,0 +1,163 @@
+// block css
+@mixin centerItiem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin resetList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+
+// =============================================
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background: var(--primary-color);
+}
+
+.header-logo {
+  height: min-content;
+  align-self: center;
+
+  img {
+    width: 100px;
+  }
+}
+
+.header-nav {
+  @include resetList();
+  display: flex;
+  
+}
+
+.header-nav__item {
+  position: relative;
+  
+}
+
+.header-nav__link {
+  padding: 25px 30px;
+  line-height: 3rem;
+  display: block;
+  color: var(--text-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  transition: .2s;
+}
+
+.header-nav__link:hover {
+  color: var(--second-color);
+}
+
+.header-buttons {
+  align-self: center;
+  display: flex;
+  align-items: center;
+
+  i {
+    font-size: 2.2rem;
+  }
+}
+
+
+.header-buttons__icon {
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.header-buttons__icon:hover {
+  color: var(--second-color);
+}
+
+.header-buttons__icon:last-child {
+  margin-right: 0;
+}
+
+.header-buttons__number {
+  position: absolute;
+  background: var(--second-color);
+  width: 20px;
+  height: 20px;
+  @include centerItiem();
+  border-radius: 50px;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  top: 35%;
+  left: 70%;
+}
+
+.header-buttons__menu-mobile {
+  width: 50px;
+  height: 50px;
+  @include centerItiem();
+  background: #f8eeeb;
+  border-radius: 50px;
+}
+
+.header-buttons__menu-mobile:hover {
+  background: #fff;
+}
+
+.header-nav__subnav {
+  @include resetList();
+  position: absolute;
+  min-width: 230px;
+  padding: 25px 20px;
+  background: #fff;
+  box-shadow: 0 3px 11px 0 rgba(0,0,0,.1);
+  transition: 0.2s;
+  top: 90%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header-nav__item:hover .header-nav__subnav {
+  top: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-nav__subnav-list {
+
+  a {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    display: block;
+    padding: 6px 0;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: var(--second-color);
+    padding-left: 8px;
+  }
+}
+
+.header-nav__mega-nav {
+  position: absolute;
+}
+
+.header-nav__mega-nav-content {
+  display: flex;
+}
+
+.header-nav__mega-nav-list {
+  width: max-content;
+}
+
+.header-nav__mega-nav-title {
+
+  a {
+    color: var(--text-color);
+    font-size: 1.6rem;
+  }
+}

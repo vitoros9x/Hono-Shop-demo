@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fef5ef;
+  --second-color: #b19361;
+  --footer-color: #24262b;
+  --text-color: #24262b;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+  color: #24262b;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.container-wide {
+  padding: 0 105px;
+}
+
+.container-wide__wrap {
+
+}
