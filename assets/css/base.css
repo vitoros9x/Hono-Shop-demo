@@ -14,7 +14,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #24262b;
   font-size: 62.5%;
 }
@@ -29,5 +29,249 @@ a {
 
 .container-wide {
   padding: 0 105px;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mobile-nav, .cart-bar {
+  max-width: 400px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 100%;
+  top: 0;
+  background: var(--footer-color);
+  padding: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mobile-nav a, .cart-bar a {
+  color: #ffffff;
+}
+
+.close {
+  text-align: right;
+}
+
+.close i {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.mobile-nav__contact {
+  text-align: center;
+  color: #fff;
+}
+
+.mobile-nav__contact img {
+  width: 100px;
+}
+
+.mobile-nav__contact p {
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.mobile-nav__contact-logo {
+  margin: 30px 0;
+  display: block;
+}
+
+.mobile-nav__contact-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 30px;
+}
+
+.mobile-nav__contact-social a {
+  font-size: 1.8rem;
+  color: #ffffff;
+  background: #2f3239;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mobile-nav__contact-social a:hover {
+  color: #2f3239;
+  background: #fff;
+}
+
+.mobile-nav__pages a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mobile-nav__pages a:hover {
+  color: var(--second-color);
+}
+
+.cart-bar {
+  left: calc(100%);
+  background: #fff;
+}
+
+.cart-bar .close {
+  text-align: right;
+}
+
+.cart-bar .close i {
+  color: #000;
+  font-size: 3rem;
+}
+
+.cart-bar__title {
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 35px 0;
+}
+
+.cart-bar__product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-bar__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cart-bar__product-link {
+  width: 90px;
+  border: 1px solid #ededed;
+  margin-right: 20px;
+}
+
+.cart-bar__product-link img {
+  width: 100%;
+}
+
+.cart-bar__product-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart-bar__product-name a {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 700;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cart-bar__product-name a:hover {
+  opacity: 1;
+}
+
+.cart-bar__product-numbers {
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+
+.cart-bar__product-del {
+  color: red;
+  font-size: 1.6rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cart-bar__total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0.7;
+  margin-top: 35px;
+}
+
+.cart-bar__total-price-text {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cart-bar__total-price-value {
+  font-size: 2rem;
+}
+
+.cart-bar__btn {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border: 1px solid var(--second-color);
+  border-radius: 4px;
+  font-weight: 600;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cart-bar__btn a {
+  display: block;
+  background: var(--second-color);
+  padding: 6px 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cart-bar__btn:hover a {
+  background: #ffffff;
+  color: var(--second-color);
+}
+
+.cart-bar__view-cart {
+  margin: 35px 0 20px;
 }
 /*# sourceMappingURL=base.css.map */

@@ -9,15 +9,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css"/>
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/main.css">
-
+  
 </head>
 
 <body>
@@ -35,7 +33,7 @@
           <li class="header-nav__subnav-list"><a href="#">Home 4</a></li>
         </ul>
       </li>
-      <li class="header-nav__item">
+      <li class="header-nav__mega-item">
         <a href="#" class="header-nav__link">Shop</a>
         <div class="header-nav__mega-nav">
           <div class="header-nav__mega-nav-content">
@@ -61,74 +59,75 @@
             </ul>
             <ul class="header-nav__mega-nav-list">
               <li class="header-nav__mega-nav-title">
-                <a href=""></a>
+                <a href="">Other Pages</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Cart</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Empty Cart</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Wishlist</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Compare</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Checkout</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Login</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">My Account</a>
               </li>
             </ul>
             <ul class="header-nav__mega-nav-list">
               <li class="header-nav__mega-nav-title">
-                <a href=""></a>
+                <a href="">Product Types</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Default</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Variable</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Referral</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Group</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Slider</a>
               </li>
             </ul>
             <ul class="header-nav__mega-nav-list">
               <li class="header-nav__mega-nav-title">
-                <a href=""></a>
+                <a href="">Product Types</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Tab Left</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Tab Right</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Gallery Left</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Gallery Right</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Sticky Left</a>
               </li>
               <li class="header-nav__subnav-list">
-                <a href="#"></a>
+                <a href="#">Product Sticky Right</a>
               </li>
             </ul>
           </div>
+          <img src="./assets/img/menu-banner.jpg" alt="">
         </div>
       </li>
       <li class="header-nav__item">
@@ -170,17 +169,142 @@
       <span class="header-buttons__icon header-buttons__search">
         <i class="fa fa-search" aria-hidden="true"></i>
       </span>
-      <span class="header-buttons__icon header-buttons__menu-mobile">
+      <span id="mobile-btn" class="header-buttons__icon header-buttons__menu-mobile">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
     </div>
   </header>
 
+  <div id="content">
+    <div class="banner">
+      <div class="banner-slider">
+        <div class="banner-slider__item">
+          <img src="./assets/img/hero-slider-1.jpg" alt="hero-slider-1">
+        </div>
+        <div class="banner-slider__item">
+          <img src="./assets/img/hero-slider-2.jpg" alt="hero-slider-2">
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal menu mobile -->
+  <div id="modal">
+  </div>
+  <nav class="mobile-nav">
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="mobile-nav__contact">
+      <a class="mobile-nav__contact-logo" href="index.html">
+        <img src="./assets/img/logo_white.png" alt="logo_black">
+      </a>
+      <p>Address: 4710-4890 Breckinridge St, Fayettevill</p>
+      <p>Call Us: (+800) 345 678, (+800) 123 456</p>
+      <p>Email: yourmail@mail.com</p>
+      <div class="mobile-nav__contact-social">
+        <a href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="mobile-nav__pages">
+        <a href="#">Wishlist</a>
+        <a href="#">Cart</a>
+        <a href="#">Checkout</a>
+      </div>
+    </div>
+  </nav>
 
+  <div class="cart-bar">
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="cart-bar__content">
+      <h3 class="cart-bar__title">Shopping Cart</h3>
+      <ul class="cart-bar__product-list">
+        <li class="cart-bar__product">
+          <a class="cart-bar__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1.jpg" alt="default-1">
+          </a>
+          <div class="cart-bar__product-info">
+            <h4 class="cart-bar__product-name">
+              <a href="#">Car Wheel</a>
+            </h4>
+            <span class="cart-bar__product-numbers">
+              <span class="cart-bar__product-qty">1</span>
+              x
+              <span class="cart-bar__product-price">$49.00</span>
+            </span>
+          </div>
+          <span class="cart-bar__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+        <li class="cart-bar__product">
+          <a class="cart-bar__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1 (1).jpg" alt="default-1">
+          </a>
+          <div class="cart-bar__product-info">
+            <h4 class="cart-bar__product-name">
+              <a href="#">Car Vails</a>
+            </h4>
+            <span class="cart-bar__product-numbers">
+              <span class="cart-bar__product-qty">1</span>
+              x
+              <span class="cart-bar__product-price">$500.00</span>
+            </span>
+          </div>
+          <span class="cart-bar__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+        <li class="cart-bar__product">
+          <a class="cart-bar__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1 (2).jpg" alt="default-1">
+          </a>
+          <div class="cart-bar__product-info">
+            <h4 class="cart-bar__product-name">
+              <a href="#">Shock Absorber</a>
+            </h4>
+            <span class="cart-bar__product-numbers">
+              <span class="cart-bar__product-qty">1</span>
+              x
+              <span class="cart-bar__product-price">$350.00</span>
+            </span>
+          </div>
+          <span class="cart-bar__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+      </ul>
+      <div class="cart-bar__total-price">
+        <span class="cart-bar__total-price-text">Subtotal:</span>
+        <span class="cart-bar__total-price-value">$170.00</span>
+      </div>
+
+      <p class="cart-bar__btn cart-bar__view-cart"><a href="#">View cart</a></p>
+      <p class="cart-bar__btn cart-bar__checkout"><a href="#">Checkout</a></p>
+    </div>
+  </div>
+
+  <!-- end -->
+
+  <!-- tools -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- end -->
 </body>
 
 </html>

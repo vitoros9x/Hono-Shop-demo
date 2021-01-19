@@ -13,7 +13,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #24262b;
   font-size: 62.5%;
 }
@@ -30,6 +30,237 @@ a {
   padding: 0 105px;
 }
 
-.container-wide__wrap {
-
+.container {
+  max-width: 1440px;
 }
+
+// ================ snippet ===================
+@mixin centerItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin resetList {
+  list-style: none;
+  padding: 0;
+} 
+
+// =====================================
+
+// Modal
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+// Menu mobile ------------
+
+.mobile-nav {
+  max-width: 400px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 100%;
+  top: 0;
+  background: var(--footer-color);
+  padding: 20px;
+  transition: 0.2s;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.close {
+  text-align: right;
+
+  i {
+    color: #fff;
+    font-size: 3rem;
+  }
+}
+
+.mobile-nav__contact {
+  text-align: center;
+  color: #fff;
+
+  img {
+    width: 100px;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.mobile-nav__contact-logo {
+  margin: 30px 0;
+  display: block;
+}
+
+.mobile-nav__contact-social {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px;
+
+  a {
+    font-size: 1.8rem;
+    color: #ffffff;
+    background: #2f3239;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    @include centerItem();
+    margin-right: 20px;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    color: #2f3239;
+    background: #fff;
+  }
+}
+
+.mobile-nav__pages {
+  a {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: 0.4s;
+  }
+
+  a:hover {
+    color: var(--second-color);
+  }
+}
+
+// end ------------------
+
+// Giỏ hàng ----------------
+
+.cart-bar {
+  @extend .mobile-nav;
+  left: calc(100%);
+  background: #fff;
+
+  .close {
+    text-align: right;
+
+    i {
+      color: #000;
+      font-size: 3rem;
+    }
+  }
+}
+
+.cart-bar__title {
+  font-weight: 400;
+  font-size: 2.2rem;
+  margin: 35px 0;
+}
+
+.cart-bar__product-list {
+  @include resetList();
+}
+
+.cart-bar__product {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cart-bar__product-link {
+  width: 90px;
+  border: 1px solid#ededed;
+  margin-right: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.cart-bar__product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cart-bar__product-name {
+  a {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 700;
+    opacity: 0.7;
+    transition: 0.2s;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+}
+
+.cart-bar__product-numbers {
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+
+
+.cart-bar__product-del {
+  color: red;
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+.cart-bar__total-price {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.7;
+  margin-top: 35px;
+}
+
+.cart-bar__total-price-text {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cart-bar__total-price-value {
+  font-size: 2rem;
+}
+
+.cart-bar__btn {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border: 1px solid var(--second-color);
+  border-radius: 4px;
+  font-weight: 600;
+  transition: 0.2s;
+  border-radius: 4px; 
+  overflow: hidden;
+
+  a {
+    display: block;
+    background: var(--second-color);
+    padding: 6px 12px;
+    transition: 0.3s;
+  }
+}
+
+.cart-bar__btn:hover a {
+  background: #ffffff;
+  color: var(--second-color);
+}
+
+.cart-bar__view-cart {
+  margin: 35px 0 20px;
+}
+// end---------------------
