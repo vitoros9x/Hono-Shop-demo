@@ -56,8 +56,8 @@ a {
   top: 0;
   background: var(--footer-color);
   padding: 20px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mobile-nav a, .cart-bar a {

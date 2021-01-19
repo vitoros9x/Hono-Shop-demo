@@ -117,6 +117,7 @@
   top: 85%;
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
 }
 
 .header-nav__item:hover .header-nav__subnav {
@@ -137,7 +138,7 @@
 
   a:hover {
     color: var(--second-color);
-    padding-left: 8px;
+    transform: translateX(10px);
   }
 }
 
@@ -158,6 +159,7 @@
   background: #fff;
   visibility: hidden;
   opacity: 0;
+  z-index: 1;
 
   img {
     width: 100%;
