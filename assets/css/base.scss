@@ -443,6 +443,11 @@ a:hover {
   left: 20px;
   background: var(--second-color);
   color: #ffffff;
+  display: none;
+}
+
+.sale-product .sale-tag {
+  display: block;
 }
 
 .product:hover {
