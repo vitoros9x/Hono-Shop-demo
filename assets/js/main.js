@@ -21,6 +21,16 @@ $(document).ready(function() {
     });
   });
 
+  $(".header-buttons__love").click(function () {
+    $("#modal").css({
+      "background": "rgba(0,0,0,0.5)",
+      'visibility' : 'visible' 
+    });
+    $('.wishlist').css({
+      'left': 'calc(100% - 400px)'
+    });
+  });
+
   $('#modal').click(function() {
     $(this).css({
       "background": "rgba(0,0,0,0)",
@@ -32,6 +42,10 @@ $(document).ready(function() {
     });
 
     $('.cart-bar').css({
+      'left': '100%'
+    });
+
+    $('.wishlist').css({
       'left': '100%'
     });
   });
@@ -49,6 +63,10 @@ $(document).ready(function() {
     $('.cart-bar').css({
       'left': '100%'
     });
+
+    $('.wishlist').css({
+      'left': '100%'
+    });
   });
 });
 
@@ -56,10 +74,23 @@ $(document).ready(function() {
 
 // slider banner 
 $('.banner-slider').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 500,
   fade: true,
   cssEase: 'linear',
-  autoplay: true
+  autoplay: true,
+  prevArrow: '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+});
+
+
+// slider product
+
+$('.arrival__product').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
 });

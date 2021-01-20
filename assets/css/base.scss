@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 :root {
@@ -9,6 +10,7 @@
   --second-color: #b19361;
   --footer-color: #24262b;
   --text-color: #24262b;
+  --text-description: #777777;
 }
 
 html {
@@ -22,12 +24,17 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .bold {
   font-weight: 700;
 }
 
 .container-wide {
   padding: 0 105px;
+  margin: auto;
 }
 
 .container {
@@ -44,7 +51,7 @@ a {
 @mixin resetList {
   list-style: none;
   padding: 0;
-} 
+}
 
 // =====================================
 
@@ -211,7 +218,6 @@ a {
   opacity: 0.7;
 }
 
-
 .cart-bar__product-del {
   color: red;
   font-size: 1.6rem;
@@ -244,7 +250,7 @@ a {
   border-radius: 4px;
   font-weight: 600;
   transition: 0.2s;
-  border-radius: 4px; 
+  border-radius: 4px;
   overflow: hidden;
 
   a {
@@ -264,3 +270,226 @@ a {
   margin: 35px 0 20px;
 }
 // end---------------------
+
+// wishlist ----------------
+.wishlist {
+  @extend .cart-bar;
+}
+
+.wishlist__title {
+  @extend .cart-bar__title;
+}
+
+.wishlist__product-list {
+  @extend .cart-bar__product-list;
+}
+
+.wishlist__product {
+  @extend .cart-bar__product;
+}
+
+.wishlist__product-link {
+  @extend .cart-bar__product-link;
+}
+
+.wishlist__product-info {
+  @extend .cart-bar__product-info;
+}
+
+.wishlist__product-name {
+  @extend .cart-bar__product-name;
+}
+
+.wishlist__product-numbers {
+  @extend .cart-bar__product-numbers;
+}
+
+.wishlist__product-del {
+  @extend .cart-bar__product-del;
+}
+
+.wishlist__btn {
+  @extend .cart-bar__btn;
+}
+
+.wishlist__view-wishlist {
+  margin-top: 30px;
+}
+
+// end ------------------------
+
+// slick style ---------
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #000;
+  transition: 00.4s;
+
+  i {
+    font-size: 2rem;
+  }
+}
+
+.slick-arrow:hover {
+  background: var(--second-color);
+  border: 1px solid var(--second-color);
+
+  i {
+    color: #ffffff;
+  }
+}
+
+.slick-arrow:focus {
+  outline: none;
+}
+
+.prev-btn {
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+.next-btn {
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+// end -------
+
+// product cell
+.product {
+}
+
+.product-img {
+  padding-top: 115%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.product-img__on-hover {
+  visibility: hidden;
+  transition: 00.4s;
+  opacity: 0;
+}
+
+.product-img__bar {
+  position: absolute;
+  background: #000;
+  width: 100%;
+  top: 100%;
+  color: #ffffff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  transition: 00.5s ease;
+}
+
+.add-to-cart {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 00.2s;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  color: var(--second-color);
+}
+
+.product-img__btn {
+  font-size: 1.8rem;
+
+  span {
+    margin-right: 15px;
+    transition: 00.2s;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: var(--second-color);
+  }
+}
+
+.quick-view {
+}
+
+.add-to-wishlist {
+}
+
+.shuffle {
+  margin-right: 0 !important;
+}
+
+.sale-tag {
+  position: absolute;
+  font-size: 1.4rem;
+  padding: 0 10px;
+  top: 20px;
+  left: 20px;
+  background: var(--second-color);
+  color: #ffffff;
+}
+
+.product:hover {
+  .product-img__on-hover {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .product-img__bar {
+    transform: translateY(-100%);
+  }
+}
+
+.product__content {
+  padding-top: 25px;
+}
+
+.product-name {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product__content-rate-price {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__content-rate {
+  font-size: 1.2rem;
+
+  i {
+    margin-right: 0.2rem;
+    color: var(--second-color);
+  }
+}
+
+.product__content-price {
+  font-size: 1.4rem;
+  color: var(--text-description);
+}
+
+.product__content-price-old {
+  text-decoration: line-through;
+  margin-right: 5px;
+}
+
+.product__content-price-current {
+
+}
