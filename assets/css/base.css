@@ -65,6 +65,7 @@ a:hover {
   padding: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 1;
 }
 
 .mobile-nav a, .cart-bar a, .wishlist a {
@@ -305,6 +306,7 @@ a:hover {
 .slick-arrow:hover {
   background: var(--second-color);
   border: 1px solid var(--second-color);
+  cursor: pointer;
 }
 
 .slick-arrow:hover i {

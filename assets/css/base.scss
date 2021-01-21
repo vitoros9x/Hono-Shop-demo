@@ -79,6 +79,7 @@ a:hover {
   background: var(--footer-color);
   padding: 20px;
   transition: 0.5s;
+  z-index: 1;
 
   a {
     color: #ffffff;
@@ -337,6 +338,7 @@ a:hover {
 .slick-arrow:hover {
   background: var(--second-color);
   border: 1px solid var(--second-color);
+  cursor: pointer;
 
   i {
     color: #ffffff;

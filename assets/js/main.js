@@ -94,3 +94,23 @@ $('.arrival__product').slick({
   prevArrow: '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
   nextArrow: '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
 });
+
+// slider best seller
+
+$('.best-seller__product').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow: '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+});
+
+// blog slider
+
+$('.blog-slider').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow: '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+});

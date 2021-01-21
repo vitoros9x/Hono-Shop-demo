@@ -11,7 +11,6 @@
   margin-bottom: 0;
 }
 
-
 // =============================================
 
 // header ------
@@ -49,7 +48,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.4rem;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .header-nav__link:hover {
@@ -65,7 +64,6 @@
     font-size: 2.2rem;
   }
 }
-
 
 .header-buttons__icon {
   margin-right: 30px;
@@ -114,7 +112,7 @@
   min-width: 230px;
   padding: 25px 20px;
   background: #fff;
-  box-shadow: 0 3px 11px 0 rgba(0,0,0,.1);
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
   transition: 0.2s;
   top: 85%;
   visibility: hidden;
@@ -129,7 +127,6 @@
 }
 
 .header-nav__subnav-list {
-
   a {
     font-size: 1.4rem;
     color: var(--text-color);
@@ -156,7 +153,7 @@
   left: 0;
   top: 85%;
   padding: 25px 30px 30px;
-  box-shadow: 0 3px 11px 0 rgba(0,0,0,.1);
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
   transition: 0.2s;
   background: #fff;
   visibility: hidden;
@@ -180,7 +177,6 @@
 }
 
 .header-nav__mega-nav-title {
-
   a {
     color: var(--text-color);
     font-size: 1.7rem;
@@ -225,9 +221,8 @@
 
 // end ------
 
-// banner section 
+// banner section
 .banner-section {
-
 }
 
 .banner-section__big {
@@ -292,7 +287,6 @@
     left: 0;
     object-fit: cover;
   }
-
 }
 
 .banner-section__sm:last-child {
@@ -304,7 +298,7 @@
   top: 26%;
   right: 10px;
   width: 170px;
- 
+
   a {
     color: var(--text-color);
     font-size: 14px;
@@ -337,7 +331,7 @@
   margin-bottom: 1rem;
 }
 
-.arrival-heading + p {
+.arrival__description {
   font-size: 1.4rem;
   color: var(--text-description);
   margin-bottom: 3.5rem;
@@ -351,4 +345,316 @@
   .next-btn {
     right: -50px;
   }
+}
+// end -------
+
+// banner modern
+.banner-modern {
+  margin-bottom: 50px;
+
+  .col {
+    max-width: 960px;
+  }
+}
+
+.banner-modern__content {
+  padding-top: 66.73%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-modern__content-wrap {
+  position: absolute;
+  top: 35%;
+  left: 100%;
+}
+
+.banner-modern__title {
+  @extend .banner-section__big-title;
+}
+
+.banner-modern__title + p {
+  font-size: 1.6rem;
+  margin-bottom: 35px;
+  letter-spacing: 0.2rem;
+  opacity: 0.7;
+}
+
+.banner-modern__link {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-weight: 700;
+  padding: 15px 33px;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.banner-modern__link:hover {
+  color: var(--second-color);
+  border: 1px solid var(--second-color);
+  text-decoration: none;
+}
+
+// end -------
+
+// best seller
+.best-seller {
+  background: #f6f6f6;
+  padding: 90px 0;
+}
+
+.best-seller__heading {
+  @extend .arrival-heading;
+}
+
+.best-seller__description {
+  @extend .arrival__description;
+}
+
+.best-seller__product {
+  .prev-btn {
+    left: -50px;
+  }
+
+  .next-btn {
+    right: -50px;
+  }
+}
+
+// end ---
+
+// section 4 column
+.section-4-col {
+  .row {
+    margin: 0;
+  }
+
+  .col-lg-3 {
+    padding: 0;
+  }
+}
+
+.section-4-col__link {
+  display: block;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+}
+
+.section-4-col__content {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+.section-4-col__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+.section-4-col__qty {
+  @extend .arrival__description;
+  letter-spacing: 0.2rem;
+}
+
+.section-4-col__btn {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  font-size: 2rem;
+  background: #ffffff;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  @include centerItiem();
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+.section-4-col__link:hover {
+  .section-4-col__title {
+    color: var(--second-color);
+  }
+
+  .section-4-col__btn {
+    background: var(--second-color);
+    color: #ffffff;
+  }
+}
+
+// end ------
+
+// blog
+.blog {
+  padding: 100px 0;
+
+  .prev-btn {
+    left: -50px;
+  }
+
+  .next-btn {
+    right: -50px;
+  }
+}
+
+.blog-heading {
+  @extend .arrival-heading;
+}
+
+.blog-description {
+  @extend .arrival__description;
+}
+
+.blog-content {
+  padding-top: 20px;
+}
+
+.blog-content__img {
+  display: block;
+  padding-top: 73.33%;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+.blog-content__title {
+  a {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    transition: 00.4s;
+  }
+
+  a:hover {
+    color: var(--second-color);
+  }
+}
+
+.blog-content__description {
+  @extend .arrival__description;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.blog-content__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-content__read-more {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.blog-content__date {
+  font-size: 1.2rem;
+  color: #777777;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+// end ------
+
+// instagram img
+.istagram-imgs {
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+
+.istagram-imgs__box {
+  display: flex;
+}
+
+.istagram-imgs__link {
+  width: 16.66%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.istagram-imgs__btn {
+  display: block;
+  position: absolute;
+  font-size: 1.6rem;
+  padding: 13px 30px;
+  background: #ffffff;
+  color: var(--text-color);
+  text-transform: uppercase;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.istagram-imgs__btn:hover {
+  color: var(--second-color);
+}
+// end ------
+
+// footer-1
+.footer-1 {
+  background: var(--footer-color);
+  padding: 100px 0 40px;
+}
+
+.footer-1__content {
+  p {
+    color: #9b9b97;
+    font-size: 1.4rem;
+  }
+}
+
+.footer-1__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.footer-1__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: var(--second-color);
+  top: calc(100% + 15px);
+}
+
+.footer-1__list {
+  @include resetList();
+}
+
+.footer-1__item {
+  margin-bottom: 10px;
+}
+
+.footer-1__item-link {
+  color: #9b9b97;
+  font-size: 1.4rem;
+  transition: 00.4s;
+  display: block;
+}
+
+.footer-1__item-link:hover {
+  color: #ffffff;
+  transform: translateX(10px);
 }
