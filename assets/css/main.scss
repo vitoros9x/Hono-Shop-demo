@@ -300,6 +300,22 @@
   }
 }
 
+@media (max-width: 767px) {
+  .banner-slider__content-title {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+  }
+
+  .banner-slider__content-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .banner-slider__content-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+}
+
 // end -----------
 
 // service promo
@@ -471,6 +487,32 @@
   }
 }
 
+@media (max-width: 575px) {
+  .banner-section {
+    .col-sm-6:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .banner-section__big-content {
+    top: 20%;
+    right: 30px;
+    width: 180px;
+  }
+
+  .banner-section__big-title {
+    font-size: 2rem;
+  }
+
+  .banner-section__big-content p {
+    font-size: 1rem;
+  }
+
+  .banner-section__big-content a {
+    font-size: 1rem;
+  }
+}
+
 // end ---------
 
 // arrival
@@ -589,12 +631,39 @@
     font-size: 1.4rem;
     text-align: right;
     padding: 10px 25px;
+    display: block;
+    width: max-content;
+    margin-left: auto;
   }
 }
 
 @media (max-width: 767px) {
   .banner-modern__content-wrap {
     right: 8%;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner-modern__content-wrap {
+    width: 50%;
+    padding: 6px;
+    background: rgba(255,255,255, 0.8);
+    right: 10%;
+    top: 10%;
+  }
+
+  .banner-modern__title {
+    font-size: 2rem;
+  }
+
+  .banner-modern__title + p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .banner-modern__link {
+    font-size: 1rem;
+    margin-bottom: 15px;
   }
 }
 
@@ -784,7 +853,7 @@
   align-self: flex-end;
 }
 
-// responesive blog 
+// responesive blog
 @media (max-width: 767px) {
   .blog {
     padding: 60px 0 40px;
@@ -1039,6 +1108,6 @@ footer {
 
 @media (max-width: 767px) {
   .footer-3__content {
-    justify-content: center; 
+    justify-content: center;
   }
 }

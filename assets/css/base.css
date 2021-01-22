@@ -363,6 +363,21 @@ a:hover {
   transform: translateY(-50%);
 }
 
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 2rem;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--second-color);
+}
+
 .product-img {
   display: block;
   padding-top: 115%;

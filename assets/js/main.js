@@ -102,7 +102,7 @@ $(document).ready(function () {
 
 // slider banner
 $(".banner-slider").slick({
-  dots: false,
+  dots: true,
   infinite: true,
   speed: 500,
   fade: true,
@@ -112,6 +112,14 @@ $(".banner-slider").slick({
     '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
   nextArrow:
     '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+  responsive: [
+    {
+      breakpoint: 575,
+      settings: {
+        arrows: false
+      }
+    }
+  ]
 });
 
 // slider product
