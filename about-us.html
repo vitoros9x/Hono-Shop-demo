@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hono Shop demo</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body>
+  <header class="header container-wide">
+    <a href="index.html" class="header-logo">
+      <img src="./assets/img/logo_black.png" alt="logo_black">
+    </a>
+    <ul class="header-nav">
+      <li class="header-nav__item">
+        <a href="index.html" class="header-nav__link">Home</a>
+        <ul class="header-nav__subnav">
+          <li class="header-nav__subnav-list"><a href="#">Home 1</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Home 2</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Home 3</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Home 4</a></li>
+        </ul>
+      </li>
+      <li class="header-nav__mega-item">
+        <a href="#" class="header-nav__link">Shop</a>
+        <div class="header-nav__mega-nav">
+          <div class="header-nav__mega-nav-content">
+            <ul class="header-nav__mega-nav-list">
+              <li class="header-nav__mega-nav-title">
+                <a href="#">Shop Layouts</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Grid Left Sidebar</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Grid Right Sidebar</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Full Width</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">List Left Sidebar</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">List Right Sidebar</a>
+              </li>
+            </ul>
+            <ul class="header-nav__mega-nav-list">
+              <li class="header-nav__mega-nav-title">
+                <a href="">Other Pages</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Cart</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Empty Cart</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Wishlist</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Compare</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Checkout</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Login</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">My Account</a>
+              </li>
+            </ul>
+            <ul class="header-nav__mega-nav-list">
+              <li class="header-nav__mega-nav-title">
+                <a href="">Product Types</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Default</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Variable</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Referral</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Group</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Slider</a>
+              </li>
+            </ul>
+            <ul class="header-nav__mega-nav-list">
+              <li class="header-nav__mega-nav-title">
+                <a href="">Product Types</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Tab Left</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Tab Right</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Gallery Left</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Gallery Right</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Sticky Left</a>
+              </li>
+              <li class="header-nav__subnav-list">
+                <a href="#">Product Sticky Right</a>
+              </li>
+            </ul>
+          </div>
+          <img src="./assets/img/menu-banner.jpg" alt="">
+        </div>
+      </li>
+      <li class="header-nav__item">
+        <a href="#" class="header-nav__link">Blog</a>
+        <ul class="header-nav__subnav">
+          <li class="header-nav__subnav-list"><a href="#">Blog Grid Sidebar left</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Blog Grid Sidebar Right</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Blog Full Width</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Blog List Sidebar Left</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Blog List Sidebar Right</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Blog Single Sidebar Left</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Blog Single Sidebar Right</a></li>
+        </ul>
+      </li>
+      <li class="header-nav__item">
+        <a href="#" class="header-nav__link">Pages</a>
+        <ul class="header-nav__subnav">
+          <li class="header-nav__subnav-list"><a href="#">Frequently Questions</a></li>
+          <li class="header-nav__subnav-list"><a href="#">Privacy Policy</a></li>
+          <li class="header-nav__subnav-list"><a href="#">404 Page</a></li>
+        </ul>
+      </li>
+      <li class="header-nav__item">
+        <a href="about-us.html" class="header-nav__link">About Us</a>
+      </li>
+      <li class="header-nav__item">
+        <a href="contact-us.html" class="header-nav__link">Contact Us</a>
+      </li>
+    </ul>
+    <div class="header-buttons">
+      <span class="header-buttons__icon header-buttons__love">
+        <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <span class="header-buttons__number">3</span>
+      </span>
+      <span class="header-buttons__icon header-buttons__cart">
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        <span class="header-buttons__number">3</span>
+      </span>
+      <span class="header-buttons__icon header-buttons__search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </span>
+      <span id="mobile-btn" class="header-buttons__icon header-buttons__menu-mobile">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </span>
+    </div>
+  </header>
+
+  <div class="breadcrumb-section">
+    <div class="container">
+      <div class="row">
+        <div class="col breadcrumb-section__content">
+          <h2 class="breadcrumb-section__heading">About Us</h2>
+          <div class="breadcrumb">
+            <a href="index.html" class="breadcrumb__link">Home</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <a href="#" class="breadcrumb__link">Pages</a>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="breadcrumb__current-page">About Us</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-us-pages">
+    <div class="about-us__store">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-us__store-img">
+              <img src="./assets/img/about-us-page/img-about.jpg" alt="img-about">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-us__store-content">
+              <h3 class="about-us__store-title bold">ABOUT OUR HONO STORE</h3>
+              <p class="bold">We believe that every project existing in digital world is a result of an idea and every
+                idea has a cause.</p>
+              <p>
+                For this reason, our each design serves an idea. Our strength in design is reflected by our name, our
+                care for details. Our specialist won't be afraid to go extra miles just to approach near perfection. We
+                don't require everything to be perfect, but we need them to be perfectly cared for. That's a reason why
+                we are willing to give contributions at best. Not a single detail is missed out under Billey's
+                professional eyes.The amount of dedication and effort equals to the level of passion and determination.
+                Get better, together as one.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us__functionality">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-us__functionality-content">
+              <h3 class="about-us__functionality-title bold">
+                Functionality Meets Perfection
+              </h3>
+              <p class="paragraph">
+                In today’s day and age, one cannot underestimate the importance of design, the art of creating striking
+                visuals to move and captivate your audience. And as the world becomes more and more digitized with each
+                passing second, the importance of graphic design has been rocketed to the top.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-us__functionality-chart">
+              <div class="about-us__functionality-chart-info">
+                <h4 class="about-us__functionality-chart-title">UI/UX</h4>
+                <div class="about-us__functionality-progressbar">
+                  <div class="about-us__functionality-progress about-us__functionality-ui"></div>
+                </div>
+              </div>
+              <div class="about-us__functionality-chart-info">
+                <h4 class="about-us__functionality-chart-title">Ideas</h4>
+                <div class="about-us__functionality-progressbar">
+                  <div class="about-us__functionality-progress about-us__functionality-idea"></div>
+                </div>
+              </div>
+              <div class="about-us__functionality-chart-info">
+                <h4 class="about-us__functionality-chart-title">Design</h4>
+                <div class="about-us__functionality-progressbar">
+                  <div class="about-us__functionality-progress about-us__functionality-design"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us__service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__service-content">
+              <div class="about-us__service-img">
+                <img src="./assets/img/about-us-page/icon_about1.jpg" alt="icon_about1">
+              </div>
+              <h3 class="about-us__service-title">Creative Always</h3>
+              <p class="paragraph">Stay creative with Billey and the huge collection of premade elements, layouts & effects.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__service-content">
+              <div class="about-us__service-img">
+                <img src="./assets/img/about-us-page/icon_about2.jpg" alt="icon_about2">
+              </div>
+              <h3 class="about-us__service-title">Express Customization</h3>
+              <p class="paragraph">Easy to install and configure the theme customization in a few clicks with Billey.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__service-content">
+              <div class="about-us__service-img">
+                <img src="./assets/img/about-us-page/icon_about3.jpg" alt="icon_about3">
+              </div>
+              <h3 class="about-us__service-title">Premium Integrations</h3>
+              <p class="paragraph">Integrated premium plugins in Billey is the secret weapon for your business to thrive.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__service-content">
+              <div class="about-us__service-img">
+                <img src="./assets/img/about-us-page/icon_about4.jpg" alt="icon_about4">
+              </div>
+              <h3 class="about-us__service-title">Real-time Editing</h3>
+              <p class="paragraph">Edit your work and preview the changes on the screen live with advanced page builder.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us__meet">
+      <div class="container">
+        <h3 class="about-us__meet-heading bold">MEET OUR TEAM</h3>
+        <div class="row about-us__meet-slider">
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__meet-member">
+              <div class="about-us__meet-img">
+                <span class="about-us__meet-img-wrap"><img src="./assets/img/about-us-page/leader1.png" alt="leader1"></span>
+              </div>
+              <h4 class="about-us__meet-member-name bold">
+                Ms. Veronica
+              </h4>
+              <span class="about-us__meet-member-position">Web Designer</span><br>
+              <span class="about-us__meet-member-social">
+                <a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__meet-member">
+              <div class="about-us__meet-img">
+                <span class="about-us__meet-img-wrap"><img src="./assets/img/about-us-page/leader2.png" alt="leader2"></span>
+              </div>
+              <h4 class="about-us__meet-member-name bold">
+                Missa Santos
+              </h4>
+              <span class="about-us__meet-member-position">CEO Founder</span><br>
+              <span class="about-us__meet-member-social">
+                <a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__meet-member">
+              <div class="about-us__meet-img">
+                <span class="about-us__meet-img-wrap"><img src="./assets/img/about-us-page/leader3.png" alt="leader3"></span>
+              </div>
+              <h4 class="about-us__meet-member-name bold">
+                Missa Santos
+              </h4>
+              <span class="about-us__meet-member-position">Chief Officer</span><br>
+              <span class="about-us__meet-member-social">
+                <a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="about-us__meet-member">
+                <div class="about-us__meet-img">
+                  <span class="about-us__meet-img-wrap"><img src="./assets/img/about-us-page/leader4.png" alt="leader4"></span>
+                </div>
+                <h4 class="about-us__meet-member-name bold">
+                  Lisa Antonia
+                </h4>
+                <span class="about-us__meet-member-position">CTO</span><br>
+                <span class="about-us__meet-member-social">
+                  <a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                </span>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="about-us__meet-member">
+              <div class="about-us__meet-img">
+                <span class="about-us__meet-img-wrap"><img src="./assets/img/about-us-page/leader2.png" alt="leader2"></span>
+              </div>
+              <h4 class="about-us__meet-member-name bold">
+                Missa Santos
+              </h4>
+              <span class="about-us__meet-member-position">CEO Founder</span><br>
+              <span class="about-us__meet-member-social">
+                <a href='#'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us__logo">
+      <div class="container">
+        <div class="row">
+          <div class="col about-us__logo-slider">
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-1.png" alt="">
+            </span>
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-2.png" alt="">
+            </span>
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-3.png" alt="">
+            </span>
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-4.png" alt="">
+            </span>
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-5.png" alt="">
+            </span>
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-6.png" alt="">
+            </span>
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-7.png" alt="">
+            </span>
+            <span class="about-us__logo-item">
+              <img src="./assets/img/about-us-page/company-logo-1.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-1__content">
+              <h3 class="footer-1__title">Infomation</h3>
+              <ul class="footer-1__list">
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Delivery Information</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Terms & Conditions</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Contact</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Returns</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-1__content">
+              <h3 class="footer-1__title">My Account</h3>
+              <ul class="footer-1__list">
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">My account</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Wishlist</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Privacy Policy</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Frequently Questions</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Order History</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-1__content">
+              <h3 class="footer-1__title">Categories</h3>
+              <ul class="footer-1__list">
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Decorative</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Kitchen utensils</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Chair & Bar stools</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Sofas and Armchairs</a>
+                </li>
+                <li class="footer-1__item">
+                  <a href="#" class="footer-1__item-link">Interior lighting</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-1__content">
+              <h3 class="footer-1__title">About Us</h3>
+              <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</p>
+              <p>Address: 4710-4890 Breckinridge St, Fayettevill</p>
+              <p>Email: yourmail@mail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3 class="footer-2__heading">Follow Us</h3>
+            <div class="mobile-nav__contact-social">
+              <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="footer-2__heading">DON'T MISS OUT ON THE LATEST</h3>
+            <form class="footer-2__form">
+              <input type="text" id="email" placeholder="Your email address..." required>
+              <button type="submit">Subscribe!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-3__content">
+              <p class="footer-3__copyright">
+                COPYRIGHT © HASTHEMES. ALL RIGHTS RESERVED. Coded by <span class="highlight">Vitoros9x</span>.
+              </p>
+              <span class="footer-3__payment">
+                <img src="./assets/img/payment/payment.png" alt="">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- Modal menu mobile, cart & wishlist -->
+  <div id="modal">
+  </div>
+  <nav class="mobile-nav">
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="mobile-nav__contact">
+      <a class="mobile-nav__contact-logo" href="index.html">
+        <img src="./assets/img/logo_white.png" alt="logo_black">
+      </a>
+      <p>Address: 4710-4890 Breckinridge St, Fayettevill</p>
+      <p>Call Us: (+800) 345 678, (+800) 123 456</p>
+      <p>Email: yourmail@mail.com</p>
+      <div class="mobile-nav__contact-social">
+        <a href="#">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="mobile-nav__pages">
+        <a href="#">Wishlist</a>
+        <a href="#">Cart</a>
+        <a href="#">Checkout</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="cart-bar">
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="cart-bar__content">
+      <h3 class="cart-bar__title">Shopping Cart</h3>
+      <ul class="cart-bar__product-list">
+        <li class="cart-bar__product">
+          <a class="cart-bar__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1.jpg" alt="default-1">
+          </a>
+          <div class="cart-bar__product-info">
+            <h4 class="cart-bar__product-name">
+              <a href="#">Car Wheel</a>
+            </h4>
+            <span class="cart-bar__product-numbers">
+              <span class="cart-bar__product-qty">1</span>
+              x
+              <span class="cart-bar__product-price">$49.00</span>
+            </span>
+          </div>
+          <span class="cart-bar__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+        <li class="cart-bar__product">
+          <a class="cart-bar__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1 (1).jpg" alt="default-1">
+          </a>
+          <div class="cart-bar__product-info">
+            <h4 class="cart-bar__product-name">
+              <a href="#">Car Vails</a>
+            </h4>
+            <span class="cart-bar__product-numbers">
+              <span class="cart-bar__product-qty">1</span>
+              x
+              <span class="cart-bar__product-price">$500.00</span>
+            </span>
+          </div>
+          <span class="cart-bar__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+        <li class="cart-bar__product">
+          <a class="cart-bar__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1 (2).jpg" alt="default-1">
+          </a>
+          <div class="cart-bar__product-info">
+            <h4 class="cart-bar__product-name">
+              <a href="#">Shock Absorber</a>
+            </h4>
+            <span class="cart-bar__product-numbers">
+              <span class="cart-bar__product-qty">1</span>
+              x
+              <span class="cart-bar__product-price">$350.00</span>
+            </span>
+          </div>
+          <span class="cart-bar__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+      </ul>
+      <div class="cart-bar__total-price">
+        <span class="cart-bar__total-price-text">Subtotal:</span>
+        <span class="cart-bar__total-price-value">$170.00</span>
+      </div>
+
+      <p class="cart-bar__btn cart-bar__view-cart"><a href="#">View cart</a></p>
+      <p class="cart-bar__btn cart-bar__checkout"><a href="#">Checkout</a></p>
+    </div>
+  </div>
+
+  <div class="wishlist">
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="wishlist__content">
+      <h3 class="wishlist__title">Wishlist</h3>
+      <ul class="wishlist__product-list">
+        <li class="wishlist__product">
+          <a class="wishlist__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1.jpg" alt="default-1">
+          </a>
+          <div class="wishlist__product-info">
+            <h4 class="wishlist__product-name">
+              <a href="#">Car Wheel</a>
+            </h4>
+            <span class="wishlist__product-numbers">
+              <span class="wishlist__product-qty">1</span>
+              x
+              <span class="wishlist__product-price">$49.00</span>
+            </span>
+          </div>
+          <span class="wishlist__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+        <li class="wishlist__product">
+          <a class="wishlist__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1 (1).jpg" alt="default-1">
+          </a>
+          <div class="wishlist__product-info">
+            <h4 class="wishlist__product-name">
+              <a href="#">Car Vails</a>
+            </h4>
+            <span class="wishlist__product-numbers">
+              <span class="wishlist__product-qty">1</span>
+              x
+              <span class="wishlist__product-price">$500.00</span>
+            </span>
+          </div>
+          <span class="wishlist__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+        <li class="wishlist__product">
+          <a class="wishlist__product-link" href="#">
+            <img src="./assets/img/cart-bar/default-1 (2).jpg" alt="default-1">
+          </a>
+          <div class="wishlist__product-info">
+            <h4 class="wishlist__product-name">
+              <a href="#">Shock Absorber</a>
+            </h4>
+            <span class="wishlist__product-numbers">
+              <span class="wishlist__product-qty">1</span>
+              x
+              <span class="wishlist__product-price">$350.00</span>
+            </span>
+          </div>
+          <span class="wishlist__product-del">
+            <i class="fa fa-trash" aria-hidden="true"></i>
+          </span>
+        </li>
+      </ul>
+      <p class="wishlist__btn wishlist__view-wishlist"><a href="#">View wishlist</a></p>
+    </div>
+  </div>
+
+  <div class="modal-search">
+    <div class="close">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <form action="" class="modal-search__input">
+      <input type="text" placeholder="type keyword(s) here"><br>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <a href="#" class="back-to-top">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- end -->
+
+  <!-- tools -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./assets/slick/slick.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+  <!-- end -->
+
+</body>
+
+</html>

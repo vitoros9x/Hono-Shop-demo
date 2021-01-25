@@ -6,7 +6,6 @@ function Menu() {
   //   left_padding = 400;
   // }
 
-
   console.log(left_padding);
 
   $("#mobile-btn").click(function () {
@@ -96,6 +95,33 @@ $(document).ready(function () {
       right: "100%",
     });
   });
+
+  // $(window).scroll(function () {
+  //   if ($(window).scrollTop() > 100) {
+  //     if (!$(".header").hasClass(".fixed")) {
+  //       $(".header").addClass("fixed").css("top", "-80px").animate({
+  //         top: "0",
+  //       }, 500);
+  //     }
+  //   } else {
+  //     $(".header").removeClass("fixed");
+  //   }
+  // });
+
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 100) {
+  //     if (!$(".header").hasClass("fixed")) {
+  //       $(".header").addClass("fixed").css("top", "-50px").animate(
+  //         {
+  //           top: "0px",
+  //         },
+  //         500
+  //       );
+  //     }
+  //   } else {
+  //     $(".header").removeClass("fixed");
+  //   }
+  // });
 });
 
 // end -------------------
@@ -116,10 +142,10 @@ $(".banner-slider").slick({
     {
       breakpoint: 575,
       settings: {
-        arrows: false
-      }
-    }
-  ]
+        arrows: false,
+      },
+    },
+  ],
 });
 
 // slider product
@@ -182,6 +208,61 @@ $(".blog-slider").slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  prevArrow:
+    '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow:
+    '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+// slider member
+
+$(".about-us__meet-slider").slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  prevArrow:
+    '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow:
+    '<button class="next-btn"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+// slider logo
+$(".about-us__logo-slider").slick({
+  infinite: true,
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  centerPadding: 0 ,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 700,
   prevArrow:
     '<button class="prev-btn"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
   nextArrow:

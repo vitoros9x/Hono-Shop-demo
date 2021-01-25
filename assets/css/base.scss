@@ -34,11 +34,21 @@ a:hover {
   font-weight: 700;
 }
 
+.fixed {
+  position: fixed;
+  display: block;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  color: var(--text-description);
+  line-height: 2.4rem;
+}
+
 .container-wide {
   padding: 0 105px;
   margin: auto;
 }
-
 
 .container {
   max-width: 1440px;
@@ -50,7 +60,7 @@ a:hover {
   }
 
   .container {
-    padding: 0 100px;  
+    padding: 0 100px;
   }
 }
 
@@ -87,7 +97,7 @@ a:hover {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
-  transition: 0.2s;
+  transition: 01s;
 }
 
 // Menu mobile ------------
@@ -172,8 +182,8 @@ a:hover {
   }
 }
 
-// responesive mobile nav 
-@media (max-width:575px) {
+// responesive mobile nav
+@media (max-width: 575px) {
   .mobile-nav {
     max-width: 300px;
   }
@@ -408,7 +418,6 @@ a:hover {
   }
 }
 
-
 // end -------------
 
 // slick style ---------
@@ -619,5 +628,68 @@ a:hover {
 }
 
 .product__content-price-current {
+}
+// end
 
+// breadcrumb section
+.breadcrumb-section {
+  padding: 120px 0;
+  margin-bottom: 100px;
+  background: var(--primary-color);
+}
+
+.breadcrumb-section__content {
+  text-align: center;
+}
+
+.breadcrumb-section__heading {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+}
+
+.breadcrumb {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  background: transparent;
+  color: #777777;
+
+  i {
+    margin: 0 15px;
+  }
+}
+
+.breadcrumb__link {
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+.breadcrumb__link:hover {
+  color: var(--second-color);
+}
+
+.breadcrumb__current-page {
+}
+// end---------
+
+// back to top btn
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 56px;
+  height: 56px;
+  @include centerItem();
+  font-size: 1.4rem;
+  border-radius: 50px;
+  background: var(--second-color);
+  color: #ffffff;
+  outline: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  transition: 00.2s;
+}
+
+.back-to-top:hover {
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
 }

@@ -41,7 +41,7 @@
 }
 
 .header-nav__link {
-  padding: 25px 30px;
+  padding: 25px 40px;
   line-height: 3rem;
   display: block;
   color: var(--text-color);
@@ -207,7 +207,17 @@
 .banner {
 }
 
+.banner:hover {
+  .slick-arrow {
+    opacity: 1;
+  }
+}
+
 .banner-slider {
+
+  .slick-arrow {
+    opacity: 0;
+  }
 }
 
 .banner-slider__item {
@@ -647,7 +657,7 @@
   .banner-modern__content-wrap {
     width: 50%;
     padding: 6px;
-    background: rgba(255,255,255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     right: 10%;
     top: 10%;
   }
@@ -1109,5 +1119,369 @@ footer {
 @media (max-width: 767px) {
   .footer-3__content {
     justify-content: center;
+  }
+}
+
+//============= contact us page ==================
+
+// contac us map
+.contact-us-page {
+}
+
+.contact-us__map {
+  width: 100%;
+}
+
+.contact-us__content {
+  margin: 100px 0;
+}
+
+.contact-us__info {
+  padding: 40px 30px;
+  background: #f8f9fa;
+}
+
+.contact-us__icon-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  i {
+    width: 40px;
+    height: 40px;
+    font-size: 2.2rem;
+    background: var(--second-color);
+    border-radius: 50px;
+    @include centerItiem();
+    color: #ffffff;
+    margin-right: 20px;
+  }
+
+  a,
+  span {
+    font-size: 1.6rem;
+    color: #777777;
+    transition: 00.4s;
+  }
+
+  a:hover {
+    color: var(--second-color);
+  }
+}
+
+.contact-us__icon-box-content {
+}
+
+.contact-us__follow {
+  a {
+    font-size: 1.8rem;
+    color: #777777;
+    margin-right: 15px;
+  }
+}
+
+.contact-us__follow-title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-us__form {
+  @extend .contact-us__info;
+
+  label {
+    display: block;
+    font-size: 1.4rem;
+    color: #777777;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    background: transparent;
+    border: 1px solid #ededed;
+    outline: none;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    font-size: 1.4rem;
+    outline: none;
+    border: 1px solid #ededed;
+  }
+
+  button {
+    padding: 15px 33px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    background: var(--text-color);
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: 00.4s;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: var(--second-color);
+  }
+}
+
+.contact-us__form-title {
+  font-size: 2.45rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+// about us page
+.about-us-pages {
+}
+
+// about store
+.about-us__store {
+  margin-bottom: 100px;
+
+  .col-md-6 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about-us__store-img {
+  padding-top: 74.53%;
+  position: relative;
+  width: 100%;
+
+  img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.about-us__store-content {
+  p.bold {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    line-height: 2rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: #777777;
+    line-height: 2.4rem;
+  }
+}
+
+.about-us__store-title {
+  font-size: 3.2rem;
+  margin-bottom: 25px;
+}
+
+// about functionality
+.about-us__functionality {
+  padding: 100px 0;
+  background: #f6f6f6;
+
+  .col-md-6 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about-us__functionality-content {
+}
+
+.about-us__functionality-title {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.about-us__functionality-chart {
+  width: 100%;
+}
+
+.about-us__functionality-chart-info {
+  margin-bottom: 30px;
+}
+
+.about-us__functionality-chart-title {
+  font-size: 1.4rem;
+}
+
+.about-us__functionality-progressbar {
+  height: 7px;
+  background-color: rgb(235, 235, 235);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.about-us__functionality-progress {
+  background: var(--second-color);
+  height: 100%;
+}
+
+.about-us__functionality-ui {
+  width: 70%;
+}
+
+.about-us__functionality-idea {
+  width: 80%;
+}
+
+.about-us__functionality-design {
+  width: 90%;
+}
+
+// about us service
+.about-us__service {
+  padding: 100px 0;
+}
+
+.about-us__service-content {
+  text-align: center;
+}
+
+.about-us__service-img {
+  max-width: 77px;
+  margin: auto;
+}
+
+.about-us__service-title {
+  font-size: 1.6rem;
+  margin: 25px 0 20px;
+  font-weight: 600;
+}
+
+// about us meet
+.about-us__meet {
+  background: #f6f6f6;
+  padding: 100px 0;
+
+  .prev-btn {
+    left: -50px;
+  }
+
+  .next-btn {
+    right: -50px;
+  }
+}
+
+.about-us__meet-heading {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 40px;
+}
+
+.about-us__meet-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 20px 30px 45px;
+}
+
+.about-us__meet-member:hover {
+  .about-us__meet-member-position {
+    opacity: 0;
+  }
+
+  .about-us__meet-member-social {
+    opacity: 1;
+    bottom: 58px;
+  }
+}
+
+.about-us__meet-img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.about-us__meet-img-wrap {
+  display: block;
+  padding-top: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.about-us__meet-member-name {
+  font-size: 1.6rem;
+  margin: 20px 0 5px;
+}
+
+.about-us__meet-member-position {
+  font-size: 1.6rem;
+  color: var(--text-description);
+  transition: 00.4s;
+}
+
+.about-us__meet-member-social {
+  font-size: 1.6rem;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  background: #ffffff;
+  transition: 00.4s;
+  opacity: 0;
+
+  a {
+    color: var(--text-color);
+  }
+
+  i {
+    margin-right: 5px;
+  }
+}
+
+// about us logos
+
+.about-us__logo {
+  padding: 100px 0;
+
+  .slick-arrow {
+    opacity: 0;
+    transition: 00.4s;
+  }
+
+  .prev-btn {
+    left: -50px;
+  }
+
+  .next-btn {
+    right: -50px;
+  }
+}
+
+.about-us__logo:hover {
+  .slick-arrow {
+    opacity: 1;
+  }
+}
+
+.about-us__logo-slider {
+  display: flex;
+}
+
+.about-us__logo-item {
+  width: 14.28%;
+  padding: 0px 50px;
+
+  img {
+    width: 100%;
   }
 }
