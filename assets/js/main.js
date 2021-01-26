@@ -279,6 +279,17 @@ $(".about-us__logo-slider").slick({
       settings: {
         slidesToShow: 1,
       },
-    },
+     },
   ],
+});
+
+// menu sidebar (menu mobile)
+$().ready(function() {
+  $('.mobile-navlist__has-child-title').click(function() {
+    $(this).siblings('.mobile-subnav').slideToggle();
+  });
+
+  $('.mobile-subnav__has-child-title').click(function() {
+    $(this).siblings('.mobile-subnav').slideToggle();
+  });
 });

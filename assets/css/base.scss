@@ -121,6 +121,8 @@ a:hover {
 
 .close {
   text-align: right;
+  width: 100%;
+  margin-bottom: 30px;
 
   i {
     color: #fff;
@@ -181,6 +183,72 @@ a:hover {
     color: var(--second-color);
   }
 }
+
+.mobile-navlist {
+  @include resetList();
+
+  i {
+    display: inline-block;
+    margin-left: auto;
+  }
+}
+
+.mobile-navlist__item {
+  color: #ffffff;
+
+  a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 5px 0;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.mobile-navlist__has-child {
+  > .mobile-subnav {
+    display: none;
+    padding: 0 10px;
+  }
+
+}
+
+.mobile-navlist__has-child-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.mobile-subnav {
+  @include resetList();
+}
+
+.mobile-subnav__item {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.mobile-subnav__has-child {
+
+  .mobile-subnav {
+    display: none;
+    padding: 0 10px;
+  }
+}
+
+.mobile-subnav__has-child-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 5px;
+  cursor: pointer;
+}
+
+
 
 // responesive mobile nav
 @media (max-width: 575px) {

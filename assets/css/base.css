@@ -105,6 +105,8 @@ a:hover {
 
 .close {
   text-align: right;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .close i {
@@ -176,6 +178,74 @@ a:hover {
 
 .mobile-nav__pages a:hover {
   color: var(--second-color);
+}
+
+.mobile-navlist {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-navlist i {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.mobile-navlist__item {
+  color: #ffffff;
+}
+
+.mobile-navlist__item a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 5px 0;
+  display: block;
+  cursor: pointer;
+}
+
+.mobile-navlist__has-child > .mobile-subnav {
+  display: none;
+  padding: 0 10px;
+}
+
+.mobile-navlist__has-child-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.mobile-subnav {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-subnav__item {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.mobile-subnav__has-child .mobile-subnav {
+  display: none;
+  padding: 0 10px;
+}
+
+.mobile-subnav__has-child-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 575px) {
