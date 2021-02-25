@@ -293,3 +293,10 @@ $().ready(function() {
     $(this).siblings('.mobile-subnav').slideToggle();
   });
 });
+
+// shop sidebar
+$().ready(function() {
+  $('.shop-sidebar__list-has-child-title').click(function() {
+    $(this).siblings('.shop-sidebar__sublist').slideToggle();
+  });
+});

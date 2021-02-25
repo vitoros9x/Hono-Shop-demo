@@ -1,3 +1,5 @@
+
+
 // block css
 @mixin centerItiem {
   display: flex;
@@ -1495,5 +1497,91 @@ footer {
 
   img {
     width: 100%;
+  }
+}
+
+// end ===================
+
+// SHOP - GRID LEFT SIDEBAR ==============
+
+.shop-sidebar {
+}
+
+.shop-sidebar__category {
+}
+
+.shop-sidebar__title {
+  font-size: 1.8rem;
+  margin-bottom: 35px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ededed;
+  position: relative;
+}
+
+.shop-sidebar__title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--second-color);
+  position: absolute;
+  top: calc(100% - 1px);
+}
+
+.shop-sidebar__list {
+  @include resetList();
+}
+
+.shop-sidebar__list-item {
+  margin-bottom: 15px;
+
+  a {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: 00.4s;
+  }
+
+  a:hover {
+    color: var(--second-color);
+  }
+}
+
+.shop-sidebar__list-has-child {
+}
+
+.shop-sidebar__list-has-child-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-color);
+  display: flex;
+  cursor: pointer;
+  transition: 00.4s;
+  margin-bottom: 15px;
+
+  i {
+    margin-left: auto;
+  }
+}
+
+.shop-sidebar__list-has-child-title:hover {
+  color: var(--second-color);
+}
+
+.shop-sidebar__sublist {
+  @include resetList();
+  padding: 0 10px;
+}
+
+.shop-sidebar__sublist-item {
+  margin-bottom: 15px;
+
+  a {
+    color: var(--text-description);
+    transition: 00.4s;
+  }
+
+  a:hover {
+    color: var(--second-color);
   }
 }
